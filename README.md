@@ -233,7 +233,7 @@ public class HelloScheduler {
           log.info(name);
   ```
 
-  ![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_11-43-38.png)
+  ![Snipaste_2023-05-16_11-43-38](https://github.com/19zfl/quartz-demo/assets/130368992/c6347e06-9c1c-4566-a361-db3b585e499f)
 
 <font color=red>注意：</font>
 
