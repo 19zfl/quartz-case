@@ -328,7 +328,7 @@ public class HelloJob implements Job {
     }
 ```
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_13-32-49.png)
+![Snipaste_2023-05-16_13-32-49](https://github.com/19zfl/quartz-demo/assets/130368992/ac38fbad-a055-4e4b-b122-1c4614a50610)
 
 #### 常用方法：
 
@@ -400,11 +400,11 @@ public class HelloJob implements Job {
 
 输出结果为：
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_15-40-05.png)
+![Snipaste_2023-05-16_15-38-46](https://github.com/19zfl/quartz-demo/assets/130368992/4de49e4e-9c49-4382-859e-29d812315c29)
 
 当在HelloJob类打上注解后：
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_15-38-46.png)
+![Snipaste_2023-05-16_15-40-05](https://github.com/19zfl/quartz-demo/assets/130368992/dadefa21-102a-4431-9def-030251bac0ce)
 
 HelloJob类上没有添加注解@PersisitJobDataAfterExecution，每次调用都会创建一个新的JobDataMap。不会累加；
 
@@ -523,7 +523,7 @@ public class JobSchedulerTrigger {
 }
 ```
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_16-16-33.png)
+![Snipaste_2023-05-16_16-16-33](https://github.com/19zfl/quartz-demo/assets/130368992/459232a2-00c2-4970-9dbb-d944760b668b)
 
 详细说明：通过执行输出看出，我们设置了重复5秒执行一次，因为我们设置了触发器的开始执行和结束执行时间在10秒内，所以任务Job类执行的次数为2次。
 
@@ -574,9 +574,9 @@ Cron表达式被用来配置CronTrigger实例。Cron表达式是一个由7个子
 | 周   | 是       | 1-7或者SUN-SAT        | ，- * / ？L C # |
 | 年   | 否       | 不填写，或者1970-2099 | ，- * /         |
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_17-43-51.png)
+![Snipaste_2023-05-16_17-43-51](https://github.com/19zfl/quartz-demo/assets/130368992/cecea6cc-c0dc-4202-b4f4-000bda3089fc)
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_17-52-35.png)
+![Snipaste_2023-05-16_17-52-35](https://github.com/19zfl/quartz-demo/assets/130368992/ef03449e-2777-4366-b190-8cb47e18c6d6)
 
 提示：
 
@@ -593,7 +593,7 @@ Quartz以模块方式架构，因此，要使它运行，几个组件必须很�
 
 Quartz的三个核心概念：调度器，任务，触发器，三者之间关系是：
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_18-04-33.png)
+![Snipaste_2023-05-16_18-04-33](https://github.com/19zfl/quartz-demo/assets/130368992/54e63bb8-c737-4255-b0e2-f52bb34757e0)
 
 一个作业，比较重要的就是Scheduler，jobDetail，Trigger；
 
@@ -663,13 +663,13 @@ Scheduler scheduler = instance.getScheduler();
 
 默认路径：quartz-2.3.0中的org.quartz中的quartz.properties
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_19-12-21.png)
+![Snipaste_2023-05-16_19-12-21](https://github.com/19zfl/quartz-demo/assets/130368992/da20e556-f471-40d7-b3cc-b69954a897af)
 
 我们将复制一份在resource文件夹中新建一个同名quartz.properties的文件，更改配置：org.quartz.threadPool.threadCount: -1
 
 再次运行任务调度器会报错：
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_19-17-06.png)
+![Snipaste_2023-05-16_19-17-06](https://github.com/19zfl/quartz-demo/assets/130368992/b275de04-b2b4-4620-b6b6-c1a23fba56ea)
 
 可以知道，如果我们在resource资源文件夹中存在一个同名文件，quartz默认会使用resource文件夹下的配置文件。
 
@@ -707,7 +707,7 @@ public class QuartzProperties {
 
 不出意外启动会报错如图：
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_19-38-24.png)
+![Snipaste_2023-05-16_19-38-24](https://github.com/19zfl/quartz-demo/assets/130368992/4b1aed80-2411-4b38-91b7-b10598a1c447)
 
 这就说明，我们通过配置工厂进行临时配置quartz.properties文件是有效果的。
 
