@@ -400,11 +400,11 @@ public class HelloJob implements Job {
 
 输出结果为：
 
-![Snipaste_2023-05-16_15-38-46](https://github.com/19zfl/quartz-demo/assets/130368992/4de49e4e-9c49-4382-859e-29d812315c29)
+![Snipaste_2023-05-16_15-40-05](https://github.com/19zfl/quartz-demo/assets/130368992/dadefa21-102a-4431-9def-030251bac0ce)
 
 当在HelloJob类打上注解后：
 
-![Snipaste_2023-05-16_15-40-05](https://github.com/19zfl/quartz-demo/assets/130368992/dadefa21-102a-4431-9def-030251bac0ce)
+![Snipaste_2023-05-16_15-38-46](https://github.com/19zfl/quartz-demo/assets/130368992/4de49e4e-9c49-4382-859e-29d812315c29)
 
 HelloJob类上没有添加注解@PersisitJobDataAfterExecution，每次调用都会创建一个新的JobDataMap。不会累加；
 
