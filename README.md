@@ -214,7 +214,7 @@ public class HelloScheduler {
   }
   ```
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_10-45-02.png)
+![Snipaste_2023-05-16_10-45-02](https://github.com/19zfl/quartz-demo/assets/130368992/ded66bf5-9e0d-4538-be5d-3173af575089)
 
 足以证明：调度器执行任务Job类之后，该实例会被释放，下次执行需要重新创建新的实例。
 
