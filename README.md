@@ -262,9 +262,9 @@ public class HelloScheduler {
     }
 ```
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_12-27-30.png)
+![Snipaste_2023-05-16_12-27-30](https://github.com/19zfl/quartz-demo/assets/130368992/8ceeaf47-6c06-4bd5-b0e5-d1f5ca2c8f7b)
 
-![](C:\Users\19zfl\Desktop\分布式调度工具\images\Snipaste_2023-05-16_12-29-02.png)
+![Snipaste_2023-05-16_12-29-02](https://github.com/19zfl/quartz-demo/assets/130368992/1436f7c6-3a62-4881-8fd3-f45f46973b04)
 
 也就是说：任务Job类与调度器中的任务实例JobDetail完成绑定之后，是能够通过org.quartz.Job类的execute方法中JobExecutionContext对象获取到任务实例的信息，当然在任务Job类中获取调度器中触发器实例Trigger信息也是跟获取任务实例JobDetail一致
 
